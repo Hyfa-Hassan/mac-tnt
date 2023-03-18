@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+/* .frominp{
+  border: 1px solid black;
+ } */
+.guestinp{
+  border: none;
+  outline: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +43,60 @@
     transform: rotate(360deg);
   }
 }
+
+.mform{
+  width: 100%;
+    margin: 20% auto;
+    padding: 39px;
+    /* border: 1px solid; */
+}
+
+/* .flight-heading{
+  margin-top: 6%;
+} */
+.flight-filter{
+  top:50%!important;
+}
+
+@media only screen and (min-width: 992px) {
+  .MForm {
+    display: none;
+  }
+  .mform{
+    display:none;;
+  }
+  
+}
+
+@media only screen and (max-width: 767px){
+  .flightSection {
+    display: block;
+  }
+}
+@media only screen and (max-width: 991px){
+  .mform{
+    margin: 7% auto;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .mform{
+    margin: 15% auto;
+  }
+}
+
+@media only screen and (min-width:402px) and (max-width:800px){
+  .mform{
+    margin: 11% auto;
+  }
+}
+/* @media only screen and (min-width: 320px){
+  .mform{
+    margin: 29% auto;
+  }
+} */
+/* @media only screen and (min-width: 990px){
+  .header-banner {
+    height: 810px!important;
+}
+} */
