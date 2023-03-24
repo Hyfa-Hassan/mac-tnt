@@ -21,9 +21,9 @@ router.post("/homeform",async(req,res)=>{
         // console.log("data is saved",addData)
         await homeData.save();
         res.status(201).json(homeData);
-        console.log("mongodb data saved",homeData);
+        // console.log("mongodb data saved",homeData);
     }catch(error){
-        console.log("error here is",error)
+        // console.log("error here is",error)
         res.status(404).json(error)
     }
 })

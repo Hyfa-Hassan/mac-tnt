@@ -1,0 +1,46 @@
+/* @media screen and (max-width: 300px) {
+    .booking-search-inputs {
+      flex-direction: column;
+    }
+  
+    .booking-search-input-item {
+      margin-bottom: 10px;
+    }
+  
+    .booking-input {
+      display: block;
+      width: 100%;
+    }
+  
+    .booking-input select {
+      width: 100%;
+    }
+  
+    .booking-input button {
+      width: 100%;
+    }
+  }
+   */
+  .header-banner {
+    background-image: url("../../../public/assets/images/flight.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .formheading {
+    margin-top: 20%;
+    color: #fff;
+  }
+   
+   @media screen and (max-width: 992px) {
+    .formheading {
+      display: none;
+    }
+   }
+
+   @media screen and (min-width: 1024px) {
+    .formheading {
+      margin-top: 15%;
+    }
+   }

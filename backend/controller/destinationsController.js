@@ -6,7 +6,7 @@ const getDestinations = async (req, res) => {
     try {
         const Destination = await Destinations.find({})
         res.json({Destination})
-        console.log(Destination)
+        // console.log(Destination)
     } catch(error) {
         next(error)
     }

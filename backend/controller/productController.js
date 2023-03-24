@@ -14,7 +14,7 @@ const getProducts = async (req, res, next) => {
 const getIntProducts = async (req, res, next) => {
     try {
         const intpack = await Product.find({'type':'international'})
-        console.log(intpack);
+        // console.log(intpack);
         res.json({intpack})
     } catch(error) {
         next(error)

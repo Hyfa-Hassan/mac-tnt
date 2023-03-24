@@ -51,12 +51,10 @@ const packSchema = new Schema({
   email_id: {
     type: String,
     required: true,
-    unique: true,
   },
   contact_number: {
     type: String,
     required: true,
-    unique:true,
   },
   tour_date: {
     type: String,

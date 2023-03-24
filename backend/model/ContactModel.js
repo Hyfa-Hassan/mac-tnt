@@ -22,6 +22,10 @@ const contactSchema = new Schema({
     type: String,
     required: true,
   },
+  tandc:{
+    type:Boolean,
+    default:false
+  }
 });
 const Contactus = new mongoose.model("contactus", contactSchema);
 module.exports = Contactus;
