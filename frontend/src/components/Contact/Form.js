@@ -19,16 +19,16 @@ export const Form = () => {
         setInputsAll({ ...inputsAll, [name]: type === 'checkbox' ? checked : value });
         // console.log(inputsAll)
     }
-    // const sendEmail = (e) => {
-    //     // e.preventDefault();
-    //     console.log("email testing here")
-    //     emailjs.sendForm('service_ngn73ph', 'template_w60qdx9', formRef.current, '3lx_dX78J3iP-EqN3')
-    //       .then((result) => {
-    //           console.log(result.text)
-    //       }, (error) => {
-    //           console.log(error.text)
-    //       });
-    //   };
+    const sendEmail = (e) => {
+        // e.preventDefault();
+        console.log("email testing here")
+        emailjs.sendForm('service_ngn73ph', 'template_w60qdx9', formRef.current, '3lx_dX78J3iP-EqN3')
+          .then((result) => {
+              console.log(result.text)
+          }, (error) => {
+              console.log(error.text)
+          });
+      };
     const handleSubmit = async (event) => {
         event.preventDefault();
         console.log("called")
@@ -60,10 +60,10 @@ export const Form = () => {
             // window.alert("Contacted successfully")
             setTimeout(function () {
                 setShowElement(false)
-            }, 2000);
+            }, 500);
             setShowElement(true)
         }
-        // sendEmail();
+        sendEmail();
         setInputsAll({
             name: "",
             email: "",

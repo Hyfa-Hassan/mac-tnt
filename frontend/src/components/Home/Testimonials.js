@@ -14,7 +14,7 @@ export const Testimonials = () =>{
                             <div className="testimoial-quote">
                                 <i className="flaticon-left-quote" style={{color:"#eb2427"}}></i>
                             </div>
-                            <p className="testimonial-feedback">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            <p className="testimonial-feedback text-justify">The tour experience with this company was incredible. The guides were knowledgeable and friendly, and the destinations were breathtaking. I would highly recommend them!</p>
                             <div className="testimonial-client-info">
                                 <img src="assets/images/clients/client-1.jpg" alt="client"/>
                                 <ul className="review-star">
@@ -33,7 +33,7 @@ export const Testimonials = () =>{
                             <div className="testimoial-quote">
                                 <i className="flaticon-left-quote" style={{color:"#eb2427"}}></i>
                             </div>
-                            <p className="testimonial-feedback">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            <p className="testimonial-feedback text-justify">Great experience with Maclareen Tours & Travels! The customer service was top-notch and the tour package exceeded my expectations. Highly recommend to anyone looking for a memorable trip.</p>
                             <div className="testimonial-client-info">
                                 <img src="assets/images/clients/client-2.jpg" alt="client"/>
                                 <ul className="review-star">
@@ -52,7 +52,7 @@ export const Testimonials = () =>{
                             <div className="testimoial-quote">
                                 <i className="flaticon-left-quote" style={{color:"#eb2427"}}></i>
                             </div>
-                            <p className="testimonial-feedback">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            <p className="testimonial-feedback text-justify">I recently booked a tour package with this company and I must say, it was a fantastic experience. The accommodations were top-notch and the tour guide was knowledgeable and friendly.</p>
                             <div className="testimonial-client-info">
                                 <img src="assets/images/clients/client-3.jpg" alt="client"/>
                                 <ul className="review-star">
@@ -71,7 +71,7 @@ export const Testimonials = () =>{
                             <div className="testimoial-quote">
                                 <i className="flaticon-left-quote" style={{color:"#eb2427"}}></i>
                             </div>
-                            <p className="testimonial-feedback">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            <p className="testimonial-feedback text-justify">I recently went on a tour with this company and I was blown away by the amazing service and attention to detail. The experience was unforgettable and I can't wait to book another trip with them!</p>
                             <div className="testimonial-client-info">
                                 <img src="assets/images/clients/client-4.jpg" alt="client"/>
                                 <ul className="review-star">

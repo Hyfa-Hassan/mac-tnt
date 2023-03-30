@@ -5,114 +5,6 @@ import "./Formstyle.css";
 import Alert from 'react-bootstrap/Alert';
 
 const Form = () => {
-    const options = [
-        "Choose Starting Point",
-        "Alabama",
-        "Alaska",
-        "Arizona",
-        "Arkansas",
-        "California",
-        "Colorado",
-        "Connecticut",
-        "Delaware",
-        "District of Columbia",
-        "Florida",
-        "Georgia",
-        "Hawaii",
-        "Idaho",
-        "Illinois",
-        "Indiana",
-        "Iowa",
-        "Kansas",
-        "Kentucky",
-        "Louisiana",
-        "Maine",
-        "Maryland",
-        "Massachusetts",
-        "Michigan",
-        "Minnesota",
-        "Mississippi",
-        "Missouri",
-        "Montana",
-        "Nebraska",
-        "Nevada",
-        "New Hampshire",
-        "New Jersey",
-        "New Mexico",
-        "New York",
-        "North Carolina",
-        "North Dakota",
-        "Ohio",
-        "Oklahoma",
-        "Oregon",
-        "Pennsylvania",
-        "Rhode Island",
-        "South Carolina",
-        "South Dakota",
-        "Tennessee",
-        "Texas",
-        "Utah",
-        "Vermont",
-        "Virginia",
-        "Washington",
-        "West Virginia",
-        "Wisconsin",
-        "Wyoming"
-    ];
-    const options2 = [
-        "Choose Destination",
-        "Alabama",
-        "Alaska",
-        "Arizona",
-        "Arkansas",
-        "California",
-        "Colorado",
-        "Connecticut",
-        "Delaware",
-        "District of Columbia",
-        "Florida",
-        "Georgia",
-        "Hawaii",
-        "Idaho",
-        "Illinois",
-        "Indiana",
-        "Iowa",
-        "Kansas",
-        "Kentucky",
-        "Louisiana",
-        "Maine",
-        "Maryland",
-        "Massachusetts",
-        "Michigan",
-        "Minnesota",
-        "Mississippi",
-        "Missouri",
-        "Montana",
-        "Nebraska",
-        "Nevada",
-        "New Hampshire",
-        "New Jersey",
-        "New Mexico",
-        "New York",
-        "North Carolina",
-        "North Dakota",
-        "Ohio",
-        "Oklahoma",
-        "Oregon",
-        "Pennsylvania",
-        "Rhode Island",
-        "South Carolina",
-        "South Dakota",
-        "Tennessee",
-        "Texas",
-        "Utah",
-        "Vermont",
-        "Virginia",
-        "Washington",
-        "West Virginia",
-        "Wisconsin",
-        "Wyoming"
-    ];
     const options3 = [
         "Select Your Travel Type",
         "One Way",
@@ -133,16 +25,16 @@ const Form = () => {
         setInputsAll({ ...inputsAll, [name]: value });
         // console.log(inputsAll)
     }
-    // const sendEmail = (e) => {
-    //     // e.preventDefault();
-    //     console.log("email testing here")
-    //     emailjs.sendForm('service_r1whife', 'template_wnohpwx', formRef.current, '52Y_rV9mRFW5SPK1U')
-    //         .then((result) => {
-    //             console.log(result.text)
-    //         }, (error) => {
-    //             console.log(error.text)
-    //         });
-    // };
+    const sendEmail = (e) => {
+        // e.preventDefault();
+        console.log("email testing here")
+        emailjs.sendForm('service_r1whife', 'template_wnohpwx', formRef.current, '52Y_rV9mRFW5SPK1U')
+            .then((result) => {
+                console.log(result.text)
+            }, (error) => {
+                console.log(error.text)
+            });
+    };
     const handleSubmit = async (event) => {
         event.preventDefault();
         const { fromm, tou, whenn, traveltype, guest, contact } = inputsAll;
@@ -175,7 +67,7 @@ const Form = () => {
             }, 500);
             setShowElement(true)
         }
-        // sendEmail();
+        sendEmail();
         setInputsAll({
             fromm: "",
             tou: "",
@@ -200,15 +92,15 @@ const Form = () => {
                                         <i className="flaticon-placeholder-point"></i>
                                         From
                                     </label>
-                                    <select value={inputsAll.fromm} name="fromm" required onChange={handleChange}>
+                                    {/* <select value={inputsAll.fromm} name="fromm" required onChange={handleChange}>
                                         {options.map((option) => (
                                             <option key={option} value={option}>
                                                 {option}
                                             </option>
                                         ))}
-                                    </select>
+                                    </select> */}
 
-                                    {/* <input type="text" placeholder="Where Are You Going" id="location"/> */}
+                                    <input type="text"  placeholder="Source" value={inputsAll.fromm} name="fromm" required onChange={handleChange} />
                                 </div>
                             </div>
                             <div className="booking-search-input-item">
@@ -217,13 +109,15 @@ const Form = () => {
                                         <i className="flaticon-placeholder-point"></i>
                                         To
                                     </label>
-                                    <select value={inputsAll.tou} name="tou" required onChange={handleChange}>
+                                    {/* <select value={inputsAll.tou} name="tou" required onChange={handleChange}>
                                         {options2.map((option) => (
                                             <option key={option} value={option}>
                                                 {option}
                                             </option>
                                         ))}
-                                    </select>
+                                    </select> */}
+                                    <input type="text" placeholder="Destination" value={inputsAll.tou} name="tou" required onChange={handleChange} />
+
                                 </div>
                             </div>
                             <div className="booking-search-input-item">
