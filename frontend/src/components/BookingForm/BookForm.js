@@ -7,6 +7,18 @@ import Alert from 'react-bootstrap/Alert';
 // import { addDetails } from '../api/apienquiry';
 
 const BookForm = () => {
+	const options = [
+		"",
+		"Maldives",
+		"Dubai",
+		"Ladakh",
+		"Athens",
+		"Kerala",
+		"Bali",
+		"Thekkady",
+		"Indonesia",
+		"Greece"
+	]
 	const [showElement, setShowElement] = useState(false)
 	const formRef = useRef();
 	const [inputValues, setInputValue] = useState({
@@ -19,7 +31,7 @@ const BookForm = () => {
 		no_of_days: "",
 		adults: "",
 		children: "",
-		tour_package: ""
+		tour_package: options[0]
            
 	});
 
@@ -28,16 +40,16 @@ const BookForm = () => {
 
 		setInputValue({ ...inputValues, [name]: value }); //inputvalues-->inputs passsed in usestate
 	}
-	// const sendEmail = (e) => {
-    //     // e.preventDefault();
-    //     console.log("email testing here")
-    //     emailjs.sendForm('service_r1whife', 'template_fx3aj4a', formRef.current, '52Y_rV9mRFW5SPK1U')
-    //       .then((result) => {
-    //           console.log(result.text)
-    //       }, (error) => {
-    //           console.log(error.text)
-    //       });
-    //   };
+	const sendEmail = (e) => {
+        // e.preventDefault();
+        console.log("email testing here")
+        emailjs.sendForm('service_r1whife', 'template_fx3aj4a', formRef.current, '52Y_rV9mRFW5SPK1U')
+          .then((result) => {
+              console.log(result.text)
+          }, (error) => {
+              console.log(error.text)
+          });
+      };
 	const handlesubmit = async (e) => {
 		e.preventDefault();
 		const { first_name, last_name, email_id, contact_number, tour_date, no_of_days, adults, children, tour_package } = inputValues;
@@ -74,7 +86,7 @@ const BookForm = () => {
             }, 500);
             setShowElement(true)
 		}
-		// sendEmail();
+		sendEmail();
 		setInputValue({
 			first_name: "",
 			last_name: "",
@@ -174,8 +186,15 @@ return (
 									</div>
 								</div>
 								<div className="form-group">
-									<span className="form-label">Tour Package</span>
-									<input className="form-control" name="tour_package" type="text" placeholder='E.g; Single tour or Round trip' value={inputValues.tour_package} required onChange={handleChange} />
+									<span className="form-label">Tour Package</span><br/>
+									{/* <input className="form-control" name="tour_package" type="text" value={inputValues.tour_package} required onChange={handleChange} /> */}
+									<select className="form-control" value={inputValues.tour_package} name="tour_package" required onChange={handleChange}>
+                                        {options.map((option, index) => (
+                                            <option key={index} value={option} disabled={index===0}>
+                                                {option || "Choose one"}
+                                            </option>
+                                        ))}
+                                    </select>
 
 								</div>
 								<div className="form-btn">

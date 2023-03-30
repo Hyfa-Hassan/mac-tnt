@@ -4,60 +4,6 @@ import emailjs from "emailjs-com"
 import Alert from 'react-bootstrap/Alert';
 
 export const Filter = () => {
-    const options2 = [
-        "Choose Destination",
-        "Alabama",
-        "Alaska",
-        "Arizona",
-        "Arkansas",
-        "California",
-        "Colorado",
-        "Connecticut",
-        "Delaware",
-        "District of Columbia",
-        "Florida",
-        "Georgia",
-        "Hawaii",
-        "Idaho",
-        "Illinois",
-        "Indiana",
-        "Iowa",
-        "Kansas",
-        "Kentucky",
-        "Louisiana",
-        "Maine",
-        "Maryland",
-        "Massachusetts",
-        "Michigan",
-        "Minnesota",
-        "Mississippi",
-        "Missouri",
-        "Montana",
-        "Nebraska",
-        "Nevada",
-        "New Hampshire",
-        "New Jersey",
-        "New Mexico",
-        "New York",
-        "North Carolina",
-        "North Dakota",
-        "Ohio",
-        "Oklahoma",
-        "Oregon",
-        "Pennsylvania",
-        "Rhode Island",
-        "South Carolina",
-        "South Dakota",
-        "Tennessee",
-        "Texas",
-        "Utah",
-        "Vermont",
-        "Virginia",
-        "Washington",
-        "West Virginia",
-        "Wisconsin",
-        "Wyoming"
-    ];
     const options3 = [
         "Select Your Travel Type",
         "The Weekend Break",
@@ -81,12 +27,12 @@ export const Filter = () => {
     const sendEmail = (e) => {
         // e.preventDefault();
         console.log("email testing here")
-        // emailjs.sendForm('service_ngn73ph', 'template_07f6mie', formRef.current, '3lx_dX78J3iP-EqN3')
-        //   .then((result) => {
-        //       console.log(result.text)
-        //   }, (error) => {
-        //       console.log(error.text)
-        //   });
+        emailjs.sendForm('service_ngn73ph', 'template_07f6mie', formRef.current, '3lx_dX78J3iP-EqN3')
+          .then((result) => {
+              console.log(result.text)
+          }, (error) => {
+              console.log(error.text)
+          });
     };
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -139,13 +85,7 @@ export const Filter = () => {
                                     <i className="flaticon-placeholder-point"></i>
                                     Where To?
                                 </label>
-                                <select value={inputsAll.tou} name="tou" required onChange={handleChange}>
-                                    {options2.map((option) => (
-                                        <option key={option} value={option}>
-                                            {option}
-                                        </option>
-                                    ))}
-                                </select>
+                                <input type="text" placeholder="Enter your destination" name="tou" value={inputsAll.tou} required onChange={handleChange}/>
                             </div>
                         </div>
                         <div className="booking-search-input-item">
