@@ -15,6 +15,7 @@ return(
                             <img src="assets/images/download.png" alt="download"/>
                         </div>
                     </div>
+                    
                     <div className="col-lg-7 pt-100 pb-100 tab-pt-0">
                         <div className="desk-pad-left-50 section-title section-title-left about-title m-0">
                             <small style={{color:"#eb2427"}}>Download Our Mobile App</small>
