@@ -18,11 +18,13 @@ import { Faq } from './pages/Faq';
 import { Contact } from './pages/Contact';
 import { Authentication } from './pages/Authentication';
 import {Flight} from './pages/Flight';
+import { Buss } from './pages/Buss';
 import { SingleTour } from './components/Common/SingleTour';
 import { SingleDestination } from './components/Destination/SingleDestination';
 import BookForm from './components/BookingForm/BookForm';
 import { Tandc } from './Tandc';
 import { Privacy } from './Privacy';
+import BusDetails from './components/Bus/BusDetails';
 function App() {
 
   return (
@@ -39,6 +41,8 @@ function App() {
       <Route path='contact' element={<Contact/>}/>
       <Route path='authentication' element={<Authentication/>}/>
       <Route path='flight' element={<Flight/>}/>
+      <Route path='bus' element={<Buss/>}/>
+      <Route path='bus-details' element={<BusDetails/>}/>
       <Route path='details' element={<SingleTour/>}/>
       <Route path='single-destination'element={<SingleDestination/>}/>
       <Route path='enquire-form' element={<BookForm/>}/>

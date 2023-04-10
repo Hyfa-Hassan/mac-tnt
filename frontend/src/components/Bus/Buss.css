@@ -1,0 +1,269 @@
+.busheading {
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.mbus-heading{
+  margin-bottom: 4rem;
+}
+.busform form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insideform-div {
+  background-color: white;
+  width: 1000px;
+  border-radius: 40px;
+
+}
+
+.btnn {
+  height: 60px;
+  width: 316px;
+  background-color:#eb2427; 
+  border-radius: 60%;
+}
+
+@media only screen and (max-width: 991px) {
+  .insideform-div {
+    max-width: 750px;
+  }
+}
+
+@media only screen and (max-width: 752px) {
+  .insideform-div {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 752px) {
+  .mbform {
+    display: none;
+  }
+  .mob-div{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 752px) {
+  .mmform {
+    display: none;
+  }
+}
+
+.mbform {
+  width: 100%;
+  /* margin: 4% auto; */
+  padding: 39px;
+
+}
+ 
+.b-in{
+  border-radius: 40px;
+}
+
+.det-title{
+  color: #eb2427;
+}
+.det-link{
+  color: blue;
+}
+.det-viewbtn{
+  background-color: green;
+}
+.det-cancelbtn{
+  background-color: red;
+}
+
+
+.fullarea{
+  padding: 0;
+  margin-left: 10px;
+  height: 100vh;
+}
+
+.inner-bus-div{
+  display: flex;
+  margin : 12px;
+}
+
+.inner-bus-details {
+    width: 100%;
+    float: left;
+    padding: 5px 0 0 0;
+}
+.result-item:hover {
+  background: #F5F5F5;
+}
+.result-item {
+  width: 99%;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid #BBB;
+  background: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+.result-bus {
+  width: 24%;
+  float: left;
+  padding-right: 10px;
+  font-size: 12px;
+  color: #525252;
+  padding-left: 1%;
+  white-space: nowrap;
+  white-space: -moz-pre-wrap!important;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  overflow: hidden;
+}
+.pass-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #960606;
+  white-space: nowrap;
+  white-space: -moz-pre-wrap!important;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  overflow: hidden;
+}
+a {
+  color: #950606;
+}
+.bus-sector {
+  width: 13%;
+  float: left;
+  float: left;
+  font-size: 12px;
+  color: #525252;
+  text-align: center;
+}
+.bus-sector .dep {
+  text-align: center;
+}
+.bus-sector div {
+  text-align: left!important;
+}
+.dep {
+  font-size: 9px;
+  color: #384938;
+  padding-bottom: 8px;
+}
+.dep-arrow {
+  background-position: -257px -292px;
+  width: 9px;
+  height: 5px;
+  padding-left: 10px;
+}
+.rail-sprite {
+  /* background: url(/content/images/ak/v1.0/rail/rail-bus-sprite.png) no-repeat; */
+}
+.clock-icon {
+  background-position: -144px -72px;
+  width: 14px;
+  height: 14px;
+  margin-left: 23px;
+}
+.bus-sctr-container {
+  width: 13%;
+  float: left;
+}
+.arr-arrow {
+  background-position: -257px -333px;
+  width: 9px;
+  height: 5px;
+  padding-left: 10px;
+}
+.bus-sctr-time {
+  width: 150px;
+  float: left;
+}
+.bus-nxtdy-container {
+  width: 100%;
+  float: left;
+}
+.bus-nxtdy-dtls {
+  color: #960606;
+  float: left;
+}
+.bus-mid-sector {
+  width: 10%;
+  float: left;
+  float: left;
+  padding-left: 5px;
+  font-size: 12px;
+  color: #525252;
+  text-align: center;
+}
+.seat-icon {
+  background-position: -195px -71px;
+  height: 22px;
+  margin: 0 auto;
+  width: 24px;
+}
+.price-bus {
+  width: 22%;
+  float: left;
+}
+.totel-fare {
+  font-size: 13px;
+  padding-left: 9px;
+  font-weight: bold;
+  color: #960606;
+  font-family: 'ato_rupeeregular';
+}
+
+@media screen and (max-width: 788px){
+.totel-fare {
+    font-size: 12px;
+    font-weight: bold;
+    color: #960606;
+}
+}
+
+.sort-by-section {
+  padding-right: 1%;
+  float: left;
+}
+.sort-seats-btn {
+  padding-top: 7px;
+  float: left;
+}
+
+.view-seats {
+  /* background: url(/content/images/ak/v1.0/common/modify-serch.jpg) repeat-x; */
+  padding: 3px 5px;
+  border: 1px solid #A0A0A0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #525252;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  font-size: 11px;
+}
+
+.arow-small {
+  padding-right: 15px;
+  background-position: -329px -67px;
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+}
+.clear {
+  clear: both;
+}

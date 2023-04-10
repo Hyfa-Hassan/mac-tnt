@@ -12,7 +12,7 @@ return(
                 <div className="row align-items-center align-items-xl-start">
                     <div className="mobilepic col-lg-5 position-relative">
                         <div className="image-position image-position-top tab-pb-30 text-center text-lg-start">
-                            <img src="assets/images/download.png" alt="download"/>
+                            <img src="assets/images/mockup-final.png" alt="download"/>
                         </div>
                     </div>
                     

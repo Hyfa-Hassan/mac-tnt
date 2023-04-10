@@ -90,6 +90,9 @@ export const Header = () => {
                                                 <a href="flight" className="nav-link dropdown-toggle">Flights</a>
                                         </li>
                                         <li className="nav-item">
+                                                <a href="bus" className="nav-link dropdown-toggle">Bus</a>
+                                        </li>
+                                        <li className="nav-item">
                                                 <a href="tours" className="nav-link dropdown-toggle">Tours</a>
                                         </li>
                                         <li className="nav-item">
