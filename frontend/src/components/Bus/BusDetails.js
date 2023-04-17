@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
+import { FaChair } from 'react-icons/fa';
 const BusDetails = () => {   //{location}
     const [viewSeats, setViewSeats] = useState(false);
     // const location = useLocation();
     // console.log(location.state)
     const selectedSeats = (e) => {
         console.log("selected seats here")
-        setViewSeats(true);
+        // setViewSeats(true);
     }
     const dispViewSeats = (e) => {
         console.log("view seats here")
+        setViewSeats(true);
     }
     return (
         <div>
@@ -67,57 +69,184 @@ const BusDetails = () => {   //{location}
                             </div>
                         </div>
                         <div className='clear'></div>
-                        <div className='sel-seat-outer flt-lft' id='SeatLayOutRow44'>
-                            <div className='sel-seat-cntnr flt-lft'>
-                                <div className='sel-seat-left flt-lft'>
-                                    <div className='sel-seat-lt-cntnr flt-lft'>
-                                        <div className='sel-seat-lt-otr flt-lft'>
-                                            <div className='sel-seat flt-lft' style={{minWidth:"328px", height:"144px"}}>
-                                                <div className='sel-seat-hdng flt-lft'>
+                        {viewSeats && (
+                            <div className='sel-seat-outer flt-lft' id='SeatLayOutRow44'>
+                                <div className='sel-seat-cntnr flt-lft'>
+                                    <div className='sel-seat-left flt-lft'>
+                                        <div className='sel-seat-lt-cntnr flt-lft'>
+                                            <div className='sel-seat-lt-otr flt-lft'>
+                                                <div className='sel-seat flt-lft' style={{ minWidth: "533px", height: "130px" }}>
                                                     <div className='sel-seat-hdng flt-lft'>
-                                                        <div className='drvr-seat-sec flt-lft'>
-                                                            <div className='sel-seat-h bld flt-lft'>
-                                                                "L"
-                                                                <br/>
-                                                                "O"
-                                                                <br/>
-                                                                "W"
-                                                                <br/>
-                                                                "E"
-                                                                <br/>
-                                                                "R"
-                                                            </div>
+                                                        <div className='seat-sectn flt-lft'>
+                                                            <ul className='seat-row flt-rt'>
+                                                                <li style={{ top: "0px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "24px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "48px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "72px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "96px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
-                                                    <div className='seat-sectn flt-lft'>
-                                                        <ul className='seat-row flt-rt'>
-                                                            <li style={{top:"0px", left:"24px", position:"absolute", padding : "0px"}}>
-                                                                <a href='#' id='seat_44_0' className='rail-sprite psngr-seat-avl' onClick={selectedSeats}></a>
-                                                            </li>
-                                                            <li style={{top:"0px", left:"24px", position:"absolute", padding : "0px"}}>
-                                                                <a href='#' id='seat_44_1' className='rail-sprite psngr-seat-avl' onClick={selectedSeats}></a>
-                                                            </li>
-                                                            <li style={{top:"0px", left:"24px", position:"absolute", padding : "0px"}}>
-                                                                <a href='#' id='seat_44_2' className='rail-sprite psngr-seat-avl' onClick={selectedSeats}></a>
-                                                            </li>
-                                                            <li style={{top:"0px", left:"24px", position:"absolute", padding : "0px"}}>
-                                                                <a href='#' id='seat_44_3' className='rail-sprite psngr-seat-avl' onClick={selectedSeats}></a>
-                                                            </li>
-                                                            <li style={{top:"0px", left:"24px", position:"absolute", padding : "0px"}}>
-                                                                <a href='#' id='seat_44_4' className='rail-sprite psngr-seat-avl' onClick={selectedSeats}></a>
-                                                            </li>
-                                                            <li style={{top:"0px", left:"24px", position:"absolute", padding : "0px"}}>
-                                                                <a href='#' id='seat_44_5' className='rail-sprite psngr-seat-avl' onClick={selectedSeats}></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <div className='clear'></div>
+                                                </div>
+                                            </div>
+                                            <div className='seat-indictr-otr flt-rt'>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#D9DFD9", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Available Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#58595A", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Booked Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#53E659", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Selected Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#EC467E", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Reserved for ladies Seat</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 </div>
                 <div className='inner-bus-details'>
@@ -163,7 +292,184 @@ const BusDetails = () => {   //{location}
                             </div>
                         </div>
                         <div className='clear'></div>
+                        {viewSeats && (
+                            <div className='sel-seat-outer flt-lft' id='SeatLayOutRow44'>
+                                <div className='sel-seat-cntnr flt-lft'>
+                                    <div className='sel-seat-left flt-lft'>
+                                        <div className='sel-seat-lt-cntnr flt-lft'>
+                                            <div className='sel-seat-lt-otr flt-lft'>
+                                                <div className='sel-seat flt-lft' style={{ minWidth: "533px", height: "130px" }}>
+                                                    <div className='sel-seat-hdng flt-lft'>
+                                                        <div className='seat-sectn flt-lft'>
+                                                            <ul className='seat-row flt-rt'>
+                                                                <li style={{ top: "0px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
 
+                                                                <li style={{ top: "24px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "48px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "72px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "96px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className='clear'></div>
+                                                </div>
+                                            </div>
+                                            <div className='seat-indictr-otr flt-rt'>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#D9DFD9", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Available Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#58595A", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Booked Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#53E659", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Selected Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#EC467E", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Reserved for ladies Seat</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className='inner-bus-details'>
@@ -209,7 +515,184 @@ const BusDetails = () => {   //{location}
                             </div>
                         </div>
                         <div className='clear'></div>
+                        {viewSeats && (
+                            <div className='sel-seat-outer flt-lft' id='SeatLayOutRow44'>
+                                <div className='sel-seat-cntnr flt-lft'>
+                                    <div className='sel-seat-left flt-lft'>
+                                        <div className='sel-seat-lt-cntnr flt-lft'>
+                                            <div className='sel-seat-lt-otr flt-lft'>
+                                                <div className='sel-seat flt-lft' style={{ minWidth: "533px", height: "130px" }}>
+                                                    <div className='sel-seat-hdng flt-lft'>
+                                                        <div className='seat-sectn flt-lft'>
+                                                            <ul className='seat-row flt-rt'>
+                                                                <li style={{ top: "0px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "0px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
 
+                                                                <li style={{ top: "24px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "24px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "48px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "72px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "72px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+
+                                                                <li style={{ top: "96px", left: "0px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "48px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "96px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#EC467E", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "144px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "192px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "240px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "288px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "336px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "384px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "432px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#eb2427", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                                <li style={{ top: "96px", left: "480px", position: "absolute", padding: "0px" }}>
+                                                                    <div style={{ backgroundColor: "#D9DFD9", height: "20px", width: "40px", border: "1px solid #801c1f" }}></div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className='clear'></div>
+                                                </div>
+                                            </div>
+                                            <div className='seat-indictr-otr flt-rt'>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#D9DFD9", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Available Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#58595A", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Booked Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#53E659", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Selected Seat</div>
+                                                </div>
+                                                <div className='seat-indr-cntnr flt-lft'>
+                                                    <div style={{backgroundColor:"#EC467E", height:"20px", width:"40px", backgroundPosition:"-33px -363px", display:"block", float:"left"}}></div>
+                                                    <div className='seat-indr-txt flt-lft'>Reserved for ladies Seat</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className='inner-bus-details'>

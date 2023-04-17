@@ -267,3 +267,151 @@ a {
 .clear {
   clear: both;
 }
+
+.sel-seat-outer {
+  width: 96%;
+  border-top: 2px solid #960606;
+  margin: 10px 2% 10px 2%;
+}
+
+.seat-indictr-otr {
+  width: 201px;
+  margin-right: 9px;
+}
+.flt-lft {
+  float: left;
+}
+
+.sel-seat-cntnr {
+  width: 99%;
+  padding: 5px;
+}
+
+.sel-seat-left {
+  width: 98%;
+  padding: 0 1%;
+}
+.sel-seat-lt-cntnr {
+  display: inline;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 820px){
+.sel-seat-lt-otr {
+    width: 320px;
+}
+}
+
+.sel-seat {
+  display: inline;
+  border: 1px solid #D2C9C9;
+  border-radius: 8px;
+  padding: 5px;
+  background: #F5F4F4;
+  height: 125px;
+}
+
+.sel-seat-hdng {
+  width: 23px!important;
+  padding-right: 22px;
+}
+
+.drvr-seat-sec {
+  width: 18px;
+  height: 18px;
+  display: inline;
+  padding: 5px 0 0 5px;
+  clear: both;
+}
+
+.drvr-seat {
+  width: 18px;
+  height: 18px;
+  background-position: -131px -364px;
+}
+
+.seat-sectn {
+  display: inline;
+  position: relative;
+}
+.seat-row {
+  display: inline;
+  clear: right;
+  height: 25px;
+}
+
+ul, form, li, iframe {
+  padding: 0;
+  margin: 0;
+}
+
+ul, form, li, iframe {
+  padding: 0;
+  margin: 0;
+}
+ul, li {
+  list-style: none;
+}
+
+.seat-indictr-otr {
+  width: 201px;
+  margin-right: 9px;
+}
+
+
+.psngr-seat-avl {
+  width: 19px;
+  height: 19px;
+  background-position: -9px -363px;
+  display: block;
+}
+
+.flt-rt {
+  float: right;
+}
+
+.seat-indr-cntnr {
+  width: 210px;
+  margin: 3px 0;
+}
+
+.psngr-seat-avl {
+  width: 19px;
+  height: 19px;
+  background-position: -9px -363px;
+  display: block;
+}
+
+.seat-indr-txt {
+  width: 157px;
+  padding-left: 10px;
+}
+.psngr-seat-bkd {
+  width: 19px;
+  height: 19px;
+  background-position: -33px -363px;
+  display: block;
+}
+
+.psngr-seat-sel {
+  width: 19px;
+  height: 19px;
+  background-position: -57px -363px;
+  display: block;
+}
+
+.seat-indr-txt {
+  width: 157px;
+  padding-left: 10px;
+}
+
+.psngr-seat-lds {
+  width: 19px;
+  height: 19px;
+  background-position: -81px -363px;
+  display: block;
+}
+.seat-indr-txt {
+  width: 157px;
+  padding-left: 10px;
+}
